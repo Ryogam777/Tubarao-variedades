@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Simples - Com WhatsApp</title>
+    <style> /* Estilos CSS incorporados */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ecf0f1;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        button {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #219653;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                margin: 0.5rem 0;
+            }
+
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Site Simples</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="https://wa.me/553190681284" target="_blank">WhatsApp</a></li> <!-- Link do WhatsApp aqui -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="principal">
+            <h2>Bem-vindo!</h2>
+            <p>Este é um exemplo de site leve, criado sem imagens, focando na usabilidade e design responsivo.</p>
+            <button id="meuBotao">Clique Aqui</button>
+        </section>
+
+        <section id="secundaria">
+            <h3>Recursos</h3>
+            <p>Explore nossos serviços e descubra como podemos ajudar. Entre em contato conosco via WhatsApp!</p>
+            <ul>
+                <li>Design Responsivo</li>
+                <li>Conteúdo Dinâmico</li>
+                <li>Fácil de Usar</li>
+            </ul>
+            <a href="https://wa.me/553190681284" target="_blank">
+                <button>Fale Conosco no WhatsApp</button> <!-- Botão do WhatsApp aqui -->
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Todos os direitos reservados</p>
+    </footer>
+
+    <script> /* JavaScript incorporado */
+        document.getElementById("meuBotao").addEventListener("click", function() {
+            alert("Você clicou no botão!");
+        });
+    </script>
+
+</body>
+</html>
